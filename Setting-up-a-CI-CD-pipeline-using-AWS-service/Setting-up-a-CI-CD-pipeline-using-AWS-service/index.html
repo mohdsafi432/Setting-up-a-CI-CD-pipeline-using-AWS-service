@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CI/CD Demo App</title>
+    <link rel="stylesheet" href="css.css"> <!-- Linking the CSS file -->
+    <style>
+        /* Your CSS code will go here. If you save it as a separate file (styles.css), you can remove this <style> block. */
+        /* Insert the full CSS code here */
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div class="background-wrapper">
+            <img class="background" src="background.jpg" alt="Background image">
+        </div>
+
+        <div id="header">
+            <img id="logo" src="logo.png" alt="Logo">
+        </div>
+
+        <div id="container">
+            <form id="log-in-form">
+                <h1 id="sign-in-text">Sign In</h1>
+
+                <div class="label-container">
+                    <label for="email" class="label">Email</label>
+                    <input id="email" class="field" type="email" name="email" required>
+                    <span id="email-inputError" class="inputError">Invalid email</span>
+                </div>
+
+                <div class="label-container">
+                    <label for="password" class="label">Password</label>
+                    <input id="password" class="field" type="password" name="password" required>
+                    <span id="pwd-inputError" class="inputError">Invalid password</span>
+                </div>
+
+                <div id="login-button-container">
+                    <button id="login-button">Log In</button>
+                </div>
+
+                <div class="checkbox-row">
+                    <input type="checkbox" id="remember-me" class="checkbox-container">
+                    <label for="remember-me" id="remember-me-label">Remember me</label>
+                    <a id="help" href="#">Need help?</a>
+                </div>
+            </form>
+
+            <div class="fb-login-form">
+                <button class="fb-login-button">
+                    <img class="fb-icon" src="fb-icon.png" alt="FB Icon">
+                    <span class="fb-btn-text">Log in with Facebook</span>
+                </button>
+            </div>
+
+            <div class="sign-up">
+                <span>New here?</span>
+                <a href="#" class="sign-up-link">Sign up now</a>
+            </div>
+
+            <div class="reCAPTCHA">
+                <div id="reCAPTCHA-text">This page is protected by Google reCAPTCHA.</div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer">
+                <h4 class="footer-header">Questions? Contact us.</h4>
+                <ul class="inline-footer-ul">
+                    <li class="inline-footer-li"><a class="footer-link" href="#">FAQ</a></li>
+                    <li class="inline-footer-li"><a class="footer-link" href="#">Help Center</a></li>
+                    <li class="inline-footer-li"><a class="footer-link" href="#">Terms of Use</a></li>
+                    <li class="inline-footer-li"><a class="footer-link" href="#">Privacy</a></li>
+                </ul>
+
+                <div class="language-selector-container">
+                    <div class="language-selector-boundaries">
+                        <img class="globe-icon" src="globe-icon.png" alt="Globe Icon">
+                        <select id="language-selector">
+                            <option>English</option>
+                            <option>Spanish</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
+

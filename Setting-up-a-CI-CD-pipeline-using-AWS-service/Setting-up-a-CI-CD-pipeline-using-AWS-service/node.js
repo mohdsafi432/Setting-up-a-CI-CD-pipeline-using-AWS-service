@@ -1,0 +1,1 @@
+version: 0.2phases:  install:    commands:      - echo "Installing dependencies"      - npm install  build:    commands:      - echo "Building the Node.js app"  post_build:    commands:      - echo "Build completed"artifacts:  files:    - '**/*'

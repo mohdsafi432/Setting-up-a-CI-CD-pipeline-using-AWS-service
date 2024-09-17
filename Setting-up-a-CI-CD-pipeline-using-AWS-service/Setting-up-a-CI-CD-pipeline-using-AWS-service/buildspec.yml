@@ -1,0 +1,20 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing dependencies...
+      - npm install  # Assuming this is a Node.js project
+  build:
+    commands:
+      - echo Build started on `date`
+      - npm run build  # Replace with your build command
+  post_build:
+    commands:
+      - echo Build completed on `date`
+
+artifacts:
+  files:
+    - '**/*'
+  base-directory: build/  # Replace with the directory where build files are stored
+
